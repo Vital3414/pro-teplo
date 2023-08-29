@@ -1,0 +1,30 @@
+:root {
+    --main-color: #212121;
+    --header-color: #f2722b;
+    --header-studio-color: #000000;
+    --header-tel: #757575;
+    --hero-text: #ffffff;
+    --background-color: #2f303a;
+    --footer-tel: rgba(255, 255, 255, 0.6);
+    --hero-section-4: #F5F4FA;
+    --hero-btn-focus: #188CE8;
+    --border: #ECECEC;
+    --portfolio-border: #F5F5F5;
+}
+
+.visualy-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.alink {
+    color: var(--header-color);
+}

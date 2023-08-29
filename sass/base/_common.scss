@@ -1,0 +1,16 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--hero-text);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
