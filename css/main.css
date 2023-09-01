@@ -460,7 +460,7 @@ img {
 
 .hero {
   margin: 0;
-  background-image: url("../images/back.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: cover;
   width: 100%;
   height: 650px;
@@ -602,4 +602,37 @@ img {
   gap: 40px;
   align-items: center;
   justify-content: center;
+}
+
+.information {
+  padding-bottom: 100px;
+}
+
+.all-information {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.information-text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.information-text__span {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: flex;
+  color: var(--header-color);
 }/*# sourceMappingURL=main.css.map */
