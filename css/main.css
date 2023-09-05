@@ -94,25 +94,6 @@ img {
   margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background: #d4d4d4;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--header-color);
-  border-radius: 8px;
-  border: 3px solid #d4d4d4;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--hero-btn-focus);
-}
-
 .list {
   list-style: none;
 }
@@ -232,7 +213,7 @@ img {
 }
 
 .menu__link {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -460,15 +441,14 @@ img {
 
 .hero {
   margin: 0;
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg1.jpg");
   background-size: cover;
+  background-size: 200% 150%;
   width: 100%;
   height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: inline-grid;
   padding-right: 50px;
-  margin-bottom: 50px;
+  position: relative;
 }
 
 @keyframes gradient {
@@ -491,11 +471,11 @@ img {
   color: var(--hero-text);
   width: 700px;
   margin-left: auto;
-  margin-right: auto;
   color: black;
   display: inline-block;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   animation: fadeInRight 2s ease-out;
 }
 @media screen and (min-width: 1200px) {
@@ -516,6 +496,17 @@ img {
   white-space: nowrap;
 }
 
+.hero-photo {
+  margin-left: 50px;
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+
+.hero-photo img {
+  box-shadow: 7px 0px 20px rgb(0, 0, 0);
+}
+
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -526,7 +517,35 @@ img {
     transform: translateX(0); /* Закінчимо в початковій позиції */
   }
 }
+.hero__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-photo {
+  border-radius: 80px;
+}
+
+.second-photo {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 170px;
+  left: 220px;
+}
+
+.second-photo {
+  border-radius: 80px;
+}
+
 .info {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -605,7 +624,7 @@ img {
 }
 
 .information {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .all-information {
@@ -634,5 +653,101 @@ img {
   letter-spacing: 0.06em;
   margin: 0 auto;
   display: flex;
+  color: var(--header-color);
+}
+
+.photo {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url(/images/bg11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.photo-all {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+.photo-one {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.photo-two {
+  width: 300px;
+  height: 300px;
+  margin-top: -70px;
+  margin-left: 270px;
+  border-radius: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.photo-three {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin-top: -80px;
+}
+
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.photo-list img {
+  box-shadow: 12px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.photo-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.photo-tarif {
+  display: inline-grid;
+  justify-content: column;
+  gap: 200px;
+}
+
+.tarif-item-one, .tarif-item-two {
+  border: 3px solid var(--header-color);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.tarif-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
+}
+
+.tarif-text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
   color: var(--header-color);
 }/*# sourceMappingURL=main.css.map */
