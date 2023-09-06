@@ -43,10 +43,7 @@
             <a class="menu__link link" href="#">Договір</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#">Тарифи</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#">Контакти</a>
+            <a class="menu__link link" href="#">Новини</a>
           </li>
         </ul>
       </nav>
@@ -160,27 +157,25 @@
     </div>
   </section>
   <section class="photo container">
-    <h2 class="photo-title">Тарифи</h2>
+    <h2 class="photo-title"></h2>
     <div class="photo-all">
-      <div>
-        <ul class="photo-list list">
-          <li><img src="./images/photo-one.jpg" alt="1" class="photo-one"></li>
-          <li><img src="./images/photo-two.jpg" alt="2" class="photo-two"></li>
-          <li><img src="./images/photo-three.jpg" alt="3" class="photo-three"></li>
-        </ul>
-      </div>
-      <div>
+      <ul class="photo-list list">
+        <li><img src="./images/photo-one.jpg" alt="1" class="photo-one visible"></li>
+        <li><img src="./images/photo-two.jpg" alt="2" class="photo-two visible"></li>
+        <li><img src="./images/photo-three.jpg" alt="3" class="photo-three visible"></li>
+      </ul>
+      <!-- <div>
         <ul class="photo-tarif list">
           <li class="tarif-item-one">
             <h3 class="tarif-title">Для житлових приміщень</h3>
-            <p class="tarif-text">0 грн за 1 Гкал</p>
+            <p class="tarif-text">0 грн за 1 Гкал</p>                  !!!!!це тарифи!!!!!
           </li>
           <li class="tarif-item-two">
             <h3 class="tarif-title">Для нежитлових приміщень</h3>
             <p class="tarif-text">0 грн за 1 Гкал</p>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </section>
   <section class="info container">
@@ -218,13 +213,43 @@
       <div class="info__title-text"></div>
     </div>
   </section>
-  <footer class="footer"></footer>
+  <footer class="footer container">
+    <div class="footer-all">
+      <div class="footer-address">
+        <h3 class="footer-title">Адреса:</h3>
+        <a class="footer-map link" href="https://goo.gl/maps/WpkRaqhx7thYZoqx7" target="_blank"
+          rel="noopener noreferrer">м.Буча, б-р.Леоніда Бірюкова буд. 2а, <br>корпус 1, офіс 1</a>
+      </div>
+      <div class="footer-contact">
+        <h3 class="footer-title">Контакти:</h3>
+        <ul class="footer-list list">
+          <li><a class="footer-tel link" href="tel:+380689119040">
+              <span class="footer-telephone">+38 (068) 911 90 40</span> - адміністрація
+            </a></li>
+          <li><a class="footer-tel link" href="tel:+380974962804">
+              <span class="footer-telephone">+38 (097) 496 28 04</span> - бухгалтерія
+            </a></li>
+          <li><a class="footer-tel link" href="tel:+380939119040">
+              <span class="footer-telephone">+38 (093) 911 90 40</span> - аварійна (цілодобово)
+            </a></li>
+        </ul>
+      </div>
+      <div class="footer-mail">
+        <h3 class="footer-title">Електронна адреса:</h3>
+        <a class="footer-mail link" href="mailto:serviceproteplo@gmail.com">
+          serviceproteplo@gmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/photo.js"></script>
 </body>
 
 </html>

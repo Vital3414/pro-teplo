@@ -1,65 +1,65 @@
 .header {
-    position: fixed;
-    z-index: 3;
-    background-color: #fff;
-    width: 100%;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    border-bottom: 1px solid var(--border);
-    @include desktop {
-        padding-top: 24px;
-        padding-bottom: 15px;
-    }
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 15px;
+  }
 }
 
 .navigation__web {
-    font-family: "Raleway", sans-serif;
-    @include font(700, 24px, 1.17, 0.03em);
-    width: 134px;
-    height: 28px;
-    color: var(--header-color);
-    @include tablet {
-        margin-right: 88px;
-    }
-    @include desktop {
-        @include font(700, 26px, 1.19, 0.03em);
-        width: 145px;
-        height: 31px;
-        margin-right: 93px;
-    }
+  font-family: "Raleway", sans-serif;
+  @include font(700, 24px, 1.17, 0.03em);
+  width: 134px;
+  height: 28px;
+  color: var(--header-color);
+  @include tablet {
+    margin-right: 88px;
+  }
+  @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+    width: 145px;
+    height: 31px;
+    margin-right: 93px;
+  }
 }
 
 .auth-nav {
-    @include tablet {
+  @include tablet {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    }
-    @include desktop {
-        flex-direction: row;
-    }
+  }
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .navigation__studio {
-    font-family: "Raleway", sans-serif;
-    @include font(700, 24px, 1.17, 0.03em);
-    width: 134px;
-    height: 28px;
-    @include desktop {
-        @include font(700, 26px, 1.19, 0.03em);
-        width: 145px;
-        height: 31px;
-    }
-    color: var(--header-studio-color);
+  font-family: "Raleway", sans-serif;
+  @include font(700, 24px, 1.17, 0.03em);
+  width: 134px;
+  height: 28px;
+  @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+    width: 145px;
+    height: 31px;
+  }
+  color: var(--header-studio-color);
 }
 
 .menu__link {
-    font-family: "Nunito", sans-serif;
-    @include font(500, 14px, 1.14, 0.02em);
-    color: var(--main-color);
-    position: relative;
-    transition: color 250ms linear;
-    &::after {
+  font-family: "Nunito", sans-serif;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--main-color);
+  position: relative;
+  transition: color 250ms linear;
+  &::after {
     display: block;
     position: absolute;
     right: 0;
@@ -68,32 +68,32 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--header-color);
-    content: '';
+    content: "";
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    @include tablet {
-        margin-right: 50px;
-    }
-    @include desktop {
-        margin-right: 0;
-    }
+  }
+  @include tablet {
+    margin-right: 50px;
+  }
+  @include desktop {
+    margin-right: 0;
+  }
 }
 
 .menu__link:hover::after {
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -32px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--header-color);
-    content: '';
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--header-color);
+  content: "";
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-studio::after {
-    @include desktop{
+  @include desktop {
     width: 100%;
     display: block;
     position: absolute;
@@ -102,49 +102,48 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--header-color);
-    content: '';
+    content: "";
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  }
 }
 
 .menu__mail,
 .menu__tel,
 .menu__mail-icon,
 .menu__tel-icon {
-    transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .menu {
-    display: none;
-    @include tablet {
-        display: flex;
-        margin-left: 40px;
-    }
-    @include desktop {
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-left: 40px;
+  }
+  @include desktop {
     display: inline-flex;
     gap: 50px;
     margin-left: 110px;
-    }
+  }
 }
 
 .alink {
-    @include tablet {
-        color: var(--header-color);
-    }
-    @include desktop {
-        color: var(--header-color);
-    }
+  @include tablet {
+    color: var(--header-color);
+  }
+  @include desktop {
+    color: var(--header-color);
+  }
 }
 
 .navigation {
-    @extend %align;
+  @extend %align;
 }
 
 .header__container {
-    @extend %align;
+  @extend %align;
+  justify-content: space-between;
 }
-
-
 
 .menu__link:hover,
 .menu__mail:hover,
@@ -152,7 +151,7 @@
 .footer-mail:hover,
 .footer-tel:hover,
 .footer-map:hover {
-    color: var(--header-color);
+  color: var(--header-color);
 }
 
 .menu__link:focus,
@@ -161,103 +160,103 @@
 .footer-mail:focus,
 .footer-tel:focus,
 .footer-map:focus {
-    color: var(--header-color);
+  color: var(--header-color);
 }
 
 .menu__mail-icon,
 .menu__tel-icon {
-    fill: currentColor;
-    &:hover,
-    &:hover {
+  fill: currentColor;
+  &:hover,
+  &:hover {
     color: var(--header-color);
-    }
+  }
 }
 
 .menu__tel,
 .menu__mail {
-    gap: 10px;
+  gap: 10px;
 }
 
 .menu__mail,
 .menu__tel {
-    font-family: "Roboto", sans-serif;
-    @include font(500, 14px, 1.14, 0.02em);
-    color: var(--header-tel);
-    @extend %align;
+  font-family: "Roboto", sans-serif;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--header-tel);
+  @extend %align;
 }
 
 .mob-menu {
-    position: fixed;
-    top: 0;
-    background-color: var(--hero-text);
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    padding: 10px 0;
-    >.container-mob-menu{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: auto;
-    }
+  position: fixed;
+  top: 0;
+  background-color: var(--hero-text);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 10px 0;
+  > .container-mob-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
 }
 
 .menu-close-btn {
-    display: block;
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
 }
 
 .menu-tel__link {
-    font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    @include font(500, 40px, 1.18, 00.02em);
-    color: var(--main-color);
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  @include font(500, 40px, 1.18, 00.02em);
+  color: var(--main-color);
 }
 
 .connect-tel-menu__tel {
-    font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    @include font(500, 34px, 1.18, 0.02em);
-    color: var(--header-color);
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  @include font(500, 34px, 1.18, 0.02em);
+  color: var(--header-color);
 }
 
 .connect-tel-menu__mail {
-    font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    @include font(500, 24px, 1.17, 0.02em);
-    color: #757575;
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  @include font(500, 24px, 1.17, 0.02em);
+  color: #757575;
 }
 
 .connect-tel-menu__item {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .menu-tel__item:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .mob-menu-tel {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .mob-soc-list {
-    display: flex;
-    gap: 10px;
-    padding-bottom: 48px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 48px;
+  flex-wrap: wrap;
 }
 
 .mob-soc-item {
-    font-family: 'Roboto';
-    font-style: normal;
-    @include font(500, 18px, 1.22, 0.02em);
-    color: var(--header-color);
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(500, 18px, 1.22, 0.02em);
+  color: var(--header-color);
 }
 
 .mob-soc-item:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
