@@ -1,26 +1,26 @@
 .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid red; */
-    margin: 0 auto;
-    @include telephone {
-        width: 480px;
-    }
-    @include tablet {
-        width: 768px;
-    }
-    @include desktop {
-        min-width: 1260px;
-    }
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid red; */
+  margin: 0 auto;
+  @include telephone {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    min-width: 1260px;
+  }
 }
 
 .container-mob-menu {
-    width: 100vw;
-    height: 100vh;
-    padding-left: 40px;
-    padding-right: 15px;
-    margin: 0 auto;
+  width: 100vh;
+  height: 100vh;
+  padding-left: 40px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 // ::-webkit-scrollbar {

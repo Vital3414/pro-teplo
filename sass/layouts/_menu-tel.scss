@@ -1,0 +1,19 @@
+.menu-tel-btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-nav {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

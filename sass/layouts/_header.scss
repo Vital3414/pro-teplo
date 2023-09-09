@@ -12,6 +12,13 @@
   }
 }
 
+.logo {
+  width: 150px;
+  @include desktop {
+    width: 200px;
+  }
+}
+
 .navigation__web {
   font-family: "Raleway", sans-serif;
   @include font(700, 24px, 1.17, 0.03em);
@@ -141,8 +148,11 @@
 }
 
 .header__container {
+  display: flex;
   @extend %align;
-  justify-content: space-between;
+  @include desktop {
+    justify-content: space-between;
+  }
 }
 
 .menu__link:hover,
