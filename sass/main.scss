@@ -1,20 +1,25 @@
-@import './utils/variables';
-@import './base/reset';
-@import './utils/placeholders';
-@import './utils/mixin';
-@import './components/container';
+@import "./utils/variables";
+@import "./base/reset";
+@import "./utils/placeholders";
+@import "./utils/mixin";
+@import "./components/container";
 // @import './layouts/backdrop';
 
-@import './base/common';
-@import './components/btn';
+@import "./base/common";
+@import "./components/btn";
 
-@import './layouts/header';
-@import './layouts/animation-hero';
-@import './layouts/hero-text';
-@import './layouts/info-menu';
-@import './layouts/information';
-@import './layouts/photo';
-@import './layouts/footer';
+@import "./layouts/header";
+@import "./layouts/animation-hero";
+@import "./layouts/hero-text";
+@import "./layouts/info-menu";
+@import "./layouts/information";
+@import "./layouts/photo";
+@import "./layouts/footer";
+
+@import "./layouts/dogovir-main";
+@import "./layouts/backdrop";
+@import "./layouts/modal";
+@import "./layouts/news";
 // @import './layouts/header';
 // @import './layouts/hero';
 // @import './layouts/section-3-4';

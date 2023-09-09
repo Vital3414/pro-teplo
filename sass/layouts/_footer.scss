@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 200px;
+  height: 130px;
   border-top: 4px solid #f1f1f1;
   background-color: var(--header-color);
 }
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   gap: 120px;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .footer-container {
@@ -46,6 +46,10 @@
 
 .footer-tel:hover {
   color: #fff;
+}
+
+.footer-telephone {
+  font-size: 12px;
 }
 
 .footer-telephone:hover {
