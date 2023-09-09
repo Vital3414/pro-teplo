@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background-image: url("../images/dogovir-logo.png");
   background-size: 500px 458px;
   background-repeat: no-repeat;
   background-position: right center;
+  padding-top: 240px;
+  margin-bottom: 150px;
 }
 
 .dogovir-title {
