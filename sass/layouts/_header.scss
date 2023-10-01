@@ -190,7 +190,7 @@
 
 .menu__mail,
 .menu__tel {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   @include font(500, 14px, 1.14, 0.02em);
   color: var(--header-tel);
   @extend %align;
@@ -221,23 +221,23 @@
 }
 
 .menu-tel__link {
-  font-family: "Roboto" sans-serif;
+  font-family: "Nunito" sans-serif;
   font-style: normal;
-  @include font(500, 40px, 1.18, 00.02em);
+  @include font(500, 35px, 1.18, 00.02em);
   color: var(--main-color);
 }
 
 .connect-tel-menu__tel {
-  font-family: "Roboto" sans-serif;
+  font-family: "Nunito" sans-serif;
   font-style: normal;
-  @include font(500, 34px, 1.18, 0.02em);
+  @include font(500, 25px, 1.18, 0.02em);
   color: var(--header-color);
 }
 
 .connect-tel-menu__mail {
-  font-family: "Roboto" sans-serif;
+  font-family: "Nunito" sans-serif;
   font-style: normal;
-  @include font(500, 24px, 1.17, 0.02em);
+  @include font(500, 20px, 1.17, 0.02em);
   color: #757575;
 }
 
@@ -261,7 +261,7 @@
 }
 
 .mob-soc-item {
-  font-family: "Roboto";
+  font-family: "Nunito";
   font-style: normal;
   @include font(500, 18px, 1.22, 0.02em);
   color: var(--header-color);
