@@ -11,8 +11,8 @@
   // margin-right: auto;
   color: black;
   // text-align: right;
-  width: 110px;
-  @include font(400, 7px, 1.01, 0.06em);
+  max-width: 150px;
+  @include font(400, 10px, 1.01, 0.06em);
   display: inline-block;
   flex-direction: column;
   align-items: center;
@@ -69,8 +69,8 @@
 }
 
 .first-photo {
-  width: 150px;
-  height: 200px;
+  width: 120px;
+  height: 170px;
   border-radius: 20px;
   @include desktop {
     border-radius: 80px;
@@ -80,8 +80,8 @@
 }
 
 .second-photo {
-  width: 130px;
-  height: 170px;
+  width: 110px;
+  height: 140px;
   border-radius: 20px;
   top: 270px;
   left: 100px;
