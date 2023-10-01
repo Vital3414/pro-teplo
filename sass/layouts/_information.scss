@@ -1,26 +1,46 @@
 .information {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  justify-content: center;
 }
 
 .all-information {
-    display: flex;
-    justify-content: center;
+  justify-content: center;
+  @include desktop {
     gap: 200px;
+    display: flex;
+  }
 }
 
 .information-text {
-    font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  @include font(400, 14px, 1.61, 0.06em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include desktop {
     @include font(600, 20px, 1.61, 0.06em);
     width: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  }
 }
 
 .information-text__span {
+  @include font(400, 15px, 1.61, 0.06em);
+  display: flex;
+  color: var(--header-color);
+  margin: 0 auto;
+  @include desktop {
     @include font(600, 23px, 1.61, 0.06em);
-    margin: 0 auto;
-    display: flex;
-    color: var(--header-color);
+  }
+}
+
+.information-photo {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  @include desktop {
+    width: 350px;
+    height: 350px;
+  }
 }
