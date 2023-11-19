@@ -67,8 +67,7 @@ body {
   height: 100%;
 }
 
-.modal-btn, .open-file,
-.download-file, .menu__mail,
+.modal-btn, .menu__mail,
 .menu__tel, .header__container, .navigation {
   display: flex;
   align-items: center;
@@ -394,7 +393,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 130px;
   overflow: auto;
 }
 
@@ -406,7 +405,7 @@ body {
 }
 
 .menu-tel__link {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
@@ -416,7 +415,7 @@ body {
 }
 
 .connect-tel-menu__tel {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -426,7 +425,7 @@ body {
 }
 
 .connect-tel-menu__mail {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -725,10 +724,13 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .menu-images {
     gap: 40px;
+    max-width: initial;
   }
 }
 
@@ -927,11 +929,43 @@ body {
   margin-bottom: 30px;
 }
 
-.photo-tarif {
+.street {
+  margin-bottom: 30px;
+}
+
+.street-leonida {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .street-leonida {
+    gap: 100px;
+    flex-direction: initial;
+  }
+}
+
+.street-title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .street-title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
 }
 
 .tarif-item-one,
@@ -940,28 +974,50 @@ body {
   border-radius: 15px;
   padding: 10px;
   background-color: #f1f1f1;
-  width: 400px;
+  width: 260px;
+}
+@media screen and (min-width: 1200px) {
+  .tarif-item-one,
+  .tarif-item-two {
+    width: 400px;
+  }
 }
 
 .tarif-title {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 15px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .tarif-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
 
 .tarif-text {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 13px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   display: flex;
   justify-content: center;
   color: var(--header-color);
+}
+@media screen and (min-width: 1200px) {
+  .tarif-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
 }
 
 .visible {
@@ -1121,46 +1177,74 @@ body {
 }
 
 .dogovir-title {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
   display: flex;
   justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .dogovir-title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
 }
 
 .dogovir-button {
   display: flex;
   justify-content: center;
-  gap: 99px;
-  margin-top: 20px;
+  gap: 18px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .dogovir-button {
+    gap: 99px;
+    margin-top: 20px;
+  }
 }
 
 .open-file,
 .download-file {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 10px;
   line-height: 1.61;
   letter-spacing: 0.06em;
-  width: 300px;
-  height: 70px;
+  align-items: center;
   background-color: #f1f1f1;
-  cursor: pointer;
   border: 3px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
+  display: flex;
   justify-content: center;
-  padding: 0;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  color: black;
 }
-.open-file:hover, .open-file:focus,
-.download-file:hover,
-.download-file:focus {
-  background-color: var(--header-color);
-  color: #fff;
+@media screen and (min-width: 1200px) {
+  .open-file,
+  .download-file {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    width: 300px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50px;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .open-file:hover,
+  .download-file:hover {
+    background-color: var(--header-color);
+    color: #fff;
+  }
 }
 
 .backdrop {
@@ -1225,16 +1309,29 @@ body {
 }
 
 .questionnaire {
-  margin-left: 40px;
-  margin-right: 40px;
-  min-height: 581px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 340px;
+}
+@media screen and (min-width: 1200px) {
+  .questionnaire {
+    margin-left: 40px;
+    margin-right: 40px;
+    min-height: 581px;
+  }
 }
 
 .questionnaire iframe {
   width: 100%;
-  min-height: 581px;
-  margin-top: 10px;
+  margin-top: 40px;
+  min-height: 500px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .questionnaire iframe {
+    margin-top: 10px;
+    min-height: 581px;
+  }
 }
 
 .news {
@@ -1247,6 +1344,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 200px;
+  padding-bottom: 150px;
 }
 
 .news-title {
@@ -1268,6 +1366,129 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.news-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+}
+@media screen and (min-width: 1200px) {
+  .news-title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
+
+.news-section__item {
+  border: 3px solid var(--header-color);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0 20px 20px;
+}
+@media screen and (min-width: 1200px) {
+  .news-section__item {
+    flex-direction: initial;
+    width: 700px;
+  }
+}
+
+.news-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+}
+
+.file-open {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  color: black;
+}
+@media screen and (min-width: 1200px) {
+  .file-open {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50px;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .file-open:hover {
+    background-color: var(--header-color);
+    color: #fff;
+  }
+}
+
+.image-zoom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enlarged-image {
+  max-width: 90%;
+  max-height: 90%;
+  cursor: zoom-out;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+#image-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  justify-content: center;
+}
+
+#image-overlay.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-overlay img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10%;
+}
+
+.news-image {
+  cursor: zoom-in;
 }
 
 .menu-tel-btn {

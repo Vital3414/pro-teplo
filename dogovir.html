@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="public, max-age=1800, s-maxage=1800">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROТЕПЛО</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/main.css?version=1.1" type="text/css" media="all" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,8 +38,7 @@
             <div class="container header__container menu-nav">
                 <nav class="navigation">
                     <a href="./index.html">
-                        <img src="./images/Pro Teplo Service logo-01.jpg" alt="Логотип PRO ТЕПЛО" width="200"
-                            class="logo">
+                        <img src="./images/Pro Teplo Service logo-01.jpg" alt="Логотип PRO ТЕПЛО" class="logo">
                     </a>
                     <ul class="list menu">
                         <li class="menu__item">
@@ -70,26 +72,100 @@
                         </li>
                     </ul>
                 </div>
+
+                <div>
+                    <button type="button" class="menu-tel-btn" data-menu-open>
+                        <svg class="menu-tel-open" width="24" height="16">
+                            <use href="./images/symbol-defs.svg#icon-menu-tel"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container-mob-menu">
+                    <div class="mob-menu__top">
+                        <button type="button" class="menu-close-btn" data-menu-close>
+                            <svg class="menu-tel-close" width="30" height="30">
+                                <use href="./images/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mob-menu-tel">
+                            <li class="menu-tel__item">
+                                <a class="menu-tel__link link" href="./index.html">Головна</a>
+                            </li>
+                            <li class="menu-tel__item">
+                                <a class="menu-tel__link link" href="./dogovir.html">Договір</a>
+                            </li>
+                            <li class="menu-tel__item">
+                                <a class="menu-tel__link link" href="/news.html">Новини</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu__bottom">
+                        <div class="connect-tel">
+                            <ul class="connect-tel__menu list">
+                                <li class="connect-tel-menu__item">
+                                    <a class="connect-tel-menu__tel link" href="tel:+380689119040">
+                                        +38 (068) 911 90 40
+                                    </a>
+                                </li>
+                                <li class="connect-tel-menu__item">
+                                    <a class="connect-tel-menu__mail link" href="mailto:info@devstudio.com">
+                                        serviceproteplo@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <main class="dogovir container">
             <section class="dogovir-all">
                 <div class="dogovir-section">
                     <h1 class="dogovir-title">Договір</h1>
+                    <h3 class="street-title">бул. Леоніда Бірюкова, буд. 2а, корпус 1-3</h3>
                     <div class="dogovir-button">
-                        <button type="button" class="open-file" data-modal-open>Ознайомитись з договором онлайн</button>
+                        <button type="button" class="open-file" id="openPdfButton" data-modal-open>Ознайомитись з
+                            договором онлайн</button>
                         <button type="button" class="download-file" onclick="downloadFile()">Скачати договір</button>
+                    </div>
+                    <h3 class="street-title">вул. Лесі Українки, буд. 3</h3>
+                    <div class="dogovir-button">
+                        <button type="button" class="open-file" id="openPdf" data-open-modal>Ознайомитись з договором
+                            онлайн</button>
+                        <button type="button" class="download-file" onclick="fileDownload()">Скачати
+                            договір</button>
                     </div>
                     <div class="dogovir-tarif">
                         <h2 class="dogovir-title">Тарифи</h2>
                         <ul class="photo-tarif list">
-                            <li class="tarif-item-one">
-                                <h3 class="tarif-title">Для житлових приміщень</h3>
-                                <p class="tarif-text">0 грн за 1 Гкал</p>
-                            </li>
-                            <li class="tarif-item-two">
-                                <h3 class="tarif-title">Для нежитлових приміщень</h3>
-                                <p class="tarif-text">0 грн за 1 Гкал</p>
-                            </li>
+                            <div class="street">
+                                <h3 class="street-title">бул. Леоніда Бірюкова, буд. 2а, корпус 1-3</h3>
+                                <div class="street-leonida">
+                                    <li class="tarif-item-one">
+                                        <h3 class="tarif-title">Для житлових приміщень</h3>
+                                        <p class="tarif-text">2924,87 грн за 1 Гкал</p>
+                                    </li>
+                                    <li class="tarif-item-two">
+                                        <h3 class="tarif-title">Для нежитлових приміщень</h3>
+                                        <p class="tarif-text">6525,86 грн за 1 Гкал</p>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="street">
+                                <h3 class="street-title">вул. Лесі Українки, буд. 3</h3>
+                                <div class="street-leonida">
+                                    <li class="tarif-item-one">
+                                        <h3 class="tarif-title">Для житлових приміщень</h3>
+                                        <p class="tarif-text">2415,03 грн за 1 Гкал</p>
+                                    </li>
+                                    <li class="tarif-item-two">
+                                        <h3 class="tarif-title">Для нежитлових приміщень</h3>
+                                        <p class="tarif-text">5400,62 грн за 1 Гкал</p>
+                                    </li>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -125,10 +201,10 @@
             </div>
         </footer>
     </div>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <div class="questionnaire">
-                <iframe src="./file/book.pdf" frameborder="1" scrolling="auto"></iframe>
+                <iframe src="./file/Birukova.pdf" frameborder="1" scrolling="auto"></iframe>
                 <button class="modal-btn" data-modal-close>
                     <svg class="modal-close-icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -137,12 +213,23 @@
             </div>
         </div>
     </div>
+    <div class="backdrop is-hidden" modal-data>
+        <div class="modal">
+            <div class="questionnaire">
+                <iframe src="./file/Ukrainki.pdf" frameborder="1" scrolling="auto"></iframe>
+                <button class="modal-btn" data-close-modal>
+                    <svg class="modal-close-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/photo.js"></script>
     <script src="./js/dogovir.js"></script>

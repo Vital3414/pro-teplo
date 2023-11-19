@@ -78,11 +78,41 @@
   margin-bottom: 30px;
 }
 
-.photo-tarif {
+// .photo-tarif {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   gap: 100px;
+// }
+
+.street {
+  margin-bottom: 30px;
+}
+
+.street-leonida {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @include desktop {
+    gap: 100px;
+    flex-direction: initial;
+  }
+}
+
+.street-title {
+  @include font(600, 13px, 1.61, 0.06em);
+  color: var(--header-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  margin-bottom: 15px;
+  @include desktop {
+    font-family: "Nunito", sans-serif;
+    @include font(600, 28px, 1.61, 0.06em);
+  }
 }
 
 .tarif-item-one,
@@ -91,22 +121,31 @@
   border-radius: 15px;
   padding: 10px;
   background-color: #f1f1f1;
-  width: 400px;
+  width: 260px;
+  @include desktop {
+    width: 400px;
+  }
 }
 
 .tarif-title {
   font-family: "Nunito", sans-serif;
-  @include font(600, 22px, 1.61, 0.06em);
+  @include font(600, 15px, 1.61, 0.06em);
   display: flex;
   justify-content: center;
+  @include desktop {
+    @include font(600, 22px, 1.61, 0.06em);
+  }
 }
 
 .tarif-text {
   font-family: "Nunito", sans-serif;
-  @include font(600, 20px, 1.61, 0.06em);
+  @include font(600, 13px, 1.61, 0.06em);
   display: flex;
   justify-content: center;
   color: var(--header-color);
+  @include desktop {
+    @include font(600, 20px, 1.61, 0.06em);
+  }
 }
 
 .visible {

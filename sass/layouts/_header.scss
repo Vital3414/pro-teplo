@@ -208,7 +208,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 130px;
     overflow: auto;
   }
 }
@@ -221,21 +221,21 @@
 }
 
 .menu-tel__link {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   @include font(500, 35px, 1.18, 00.02em);
   color: var(--main-color);
 }
 
 .connect-tel-menu__tel {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   @include font(500, 25px, 1.18, 0.02em);
   color: var(--header-color);
 }
 
 .connect-tel-menu__mail {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   @include font(500, 20px, 1.17, 0.02em);
   color: #757575;

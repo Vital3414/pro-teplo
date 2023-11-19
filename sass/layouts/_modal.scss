@@ -47,14 +47,23 @@
 }
 
 .questionnaire {
-  margin-left: 40px;
-  margin-right: 40px;
-  min-height: 581px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 340px;
+  @include desktop {
+    margin-left: 40px;
+    margin-right: 40px;
+    min-height: 581px;
+  }
 }
 
 .questionnaire iframe {
   width: 100%;
-  min-height: 581px;
-  margin-top: 10px;
+  margin-top: 40px;
+  min-height: 500px;
   margin-bottom: 10px;
+  @include desktop {
+    margin-top: 10px;
+    min-height: 581px;
+  }
 }

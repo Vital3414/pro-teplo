@@ -84,8 +84,11 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
   @include desktop {
     gap: 40px;
+    max-width: initial;
   }
 }
 

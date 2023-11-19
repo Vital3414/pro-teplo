@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="public, max-age=1800, s-maxage=1800">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROТЕПЛО</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/main.css?version=1.1" type="text/css" media="all" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,8 +38,7 @@
             <div class="container header__container menu-nav">
                 <nav class="navigation">
                     <a href="./index.html">
-                        <img src="./images/Pro Teplo Service logo-01.jpg" alt="Логотип PRO ТЕПЛО" width="200"
-                            class="logo">
+                        <img src="./images/Pro Teplo Service logo-01.jpg" alt="Логотип PRO ТЕПЛО" class="logo">
                     </a>
                     <ul class="list menu">
                         <li class="menu__item">
@@ -70,12 +72,101 @@
                         </li>
                     </ul>
                 </div>
+
+                <div>
+                    <button type="button" class="menu-tel-btn" data-menu-open>
+                        <svg class="menu-tel-open" width="24" height="16">
+                            <use href="./images/symbol-defs.svg#icon-menu-tel"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container-mob-menu">
+                    <div class="mob-menu__top">
+                        <button type="button" class="menu-close-btn" data-menu-close>
+                            <svg class="menu-tel-close" width="30" height="30">
+                                <use href="./images/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mob-menu-tel">
+                            <li class="menu-tel__item">
+                                <a class="menu-tel__link link" href="./index.html">Головна</a>
+                            </li>
+                            <li class="menu-tel__item">
+                                <a class="menu-tel__link link" href="./dogovir.html">Договір</a>
+                            </li>
+                            <li class="menu-tel__item">
+                                <a class="menu-tel__link link" href="/news.html">Новини</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu__bottom">
+                        <div class="connect-tel">
+                            <ul class="connect-tel__menu list">
+                                <li class="connect-tel-menu__item">
+                                    <a class="connect-tel-menu__tel link" href="tel:+380689119040">
+                                        +38 (068) 911 90 40
+                                    </a>
+                                </li>
+                                <li class="connect-tel-menu__item">
+                                    <a class="connect-tel-menu__mail link" href="mailto:info@devstudio.com">
+                                        serviceproteplo@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <main class="news container">
             <section class="news-section">
                 <div class="news-section__content">
-                    <div>
-                        <h1 class="news-title">Поки що новин немає...</h1>
+                    <h1 class="news-title">Новини</h1>
+                    <div class="news-section__style">
+                        <ul class="news-section__list list">
+                            <li class="news-section__item">
+                                <p class="news-text">Структура тарифів для надання послуг з централізованого
+                                    теплопостачання населення для будинків Л. Бірюкова, 2а та Л. Українки, 3.</p>
+                                <div class="image-zoom">
+                                    <img src="./images/Birukova.jpg" alt="Перша картинка" class="news-image"
+                                        onclick="zoomImage(this)">
+                                    <img src="./images/Lesi.jpg" alt="Друга картинка" class="news-image"
+                                        onclick="zoomImage(this)">
+                                </div>
+                            </li>
+                            <div id="image-overlay" onclick="closeImage()"></div>
+                            <li class="news-section__item">
+                                <p class="news-text">Ліцензія на право провадження господарської діяльності з
+                                    виробництва та постачання теплової енергії</p>
+                                <button type="button" class="file-open" id="openPdfButton"
+                                    data-modal-open>Ознайомитись</button>
+                            </li>
+                            <li class="news-section__item">
+                                <p class="news-text">Рішення БМР про визначення ТОВ "Протепло Сервіс" виконавцем
+                                    послуг з теплопостачання</p>
+                                <button type="button" class="file-open" id="openPdf"
+                                    data-open-modal>Ознайомитись</button>
+                            </li>
+                            <li class="news-section__item">
+                                <p class="news-text">Рішення БМР про встановлення тарифів з постачання теплової
+                                    енергії та постачання гарячої води</p>
+                                <button type="button" class="file-open" id="openPdfBtn"
+                                    data-open-modalka>Ознайомитись</button>
+                            </li>
+                            <!-- <li class="news-section__item">
+                                <p class="news-text">Структура тарифів для надання послуг з централізованого
+                                    теплопостачання населення для будинків Л. Бірюкова, 2а та Л. Українки, 3.</p>
+                                <div class="image-zoom">
+                                    <img src="./images/Birukova.jpg" alt="Перша картинка" class="news-image"
+                                        onclick="zoomImage(this)">
+                                    <img src="./images/Lesi.jpg" alt="Друга картинка" class="news-image"
+                                        onclick="zoomImage(this)">
+                                </div>
+                            </li>
+                            <div id="image-overlay" onclick="closeImage()"></div> -->
+                        </ul>
                     </div>
                 </div>
             </section>
